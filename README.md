@@ -73,6 +73,8 @@ For later updates, the above procedure is not necessary. Just do the following:
 
 ## Changelog
 
+### 0.0.2
+* (HeikoCorpInc) first
 ### 0.0.1
 * (HeikoCorpInc) initial release
 
