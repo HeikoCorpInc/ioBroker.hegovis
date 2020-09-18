@@ -1,7 +1,7 @@
 <!--
     ioBroker.vis hegovis Widget-Set
 
-    version: "0.0.2"
+    version: "0.0.3"
 
     Copyright 2020 HeikoCorpInc heikocorpinc@gmx.de
 -->
@@ -133,6 +133,7 @@
         vis.binds['hegovis'].createWidget(this.data.wid, this.view, this.data, this.style);
     %></div>
 </script>
+
 <script id="hegovisButtonU2"
 		type="text/ejs"
 		class="vis-tpl"
@@ -187,10 +188,26 @@
                     <%== this.data.iTextFalse %>
 		        </div>
             <% } %>
-
             </div>
             <%= (el) -> vis.binds['hegovis'].handleToggle(el, this.data) %>
 		</div>
-
 	</div>
+</script>
+
+<script id="hegoVisRadio"
+        type="text/ejs"
+        class="vis-tpl"
+        data-vis-prev='<div id="prev_hegoVisRadio" style=" position: relative; text-align: initial;padding: 4px;height: 30px"><div style="top: 243px; left: 348px; font-size: 9px;" class="vis-widget_prev ui-selectee ui-selected ui-draggable-handle" data-vis-resizable="{"disabled":true, "handles":""}"> <div class="vis-widget-prev-body"> <div data-o class="ui-buttonset"> <input type="radio" value="0" class="ui-helper-hidden-accessible"><label class="ui-button ui-widget ui-state-default ui-button-text-only ui-corner-left" role="button" aria-pressed="false"><span class="ui-button-text">OFF</span></label> <input type="radio" value="1" class="ui-helper-hidden-accessible"><label class="ui-button ui-widget ui-state-default ui-button-text-only ui-corner-right ui-state-active" role="button" aria-pressed="true"><span class="ui-button-text">ON</span></label> </div> </div> </div>'
+        data-vis-set="hegovis"
+        data-vis-type="ctrl"
+        data-vis-name="Radiobuttons on/off"
+        data-vis-attrs="off_text[OFF];on_text[ON];oid;padding[5]/slider,0,100,1">
+    <div class="vis-widget <%== this.data.attr('class') %>" id="<%= this.data.attr('wid') %>" data-vis-resizable='{"disabled":true, "handles":""}' >
+        <div class="vis-widget-body" >
+            <div id="<%= this.data.attr('wid') %>_radio" data-oid="<%= this.data.attr('oid') %>" style="display: flex" <%= (el) -> vis.binds.jqueryui.radio(el); %> >
+                <input type="radio" id="<%= this.data.attr('wid') %>_radio0" name="<%= this.data.attr('wid') %>_radio" value="0" checked='checked'/><label for="<%= this.data.attr('wid') %>_radio0" style="padding: <%= this.data.attr('padding') %>px"><%= this.data.off_text %></label>
+                <input type="radio" id="<%= this.data.attr('wid') %>_radio1" name="<%= this.data.attr('wid') %>_radio" value="1"/><label for="<%= this.data.attr('wid') %>_radio1" style="padding: <%= this.data.attr('padding') %>px"><%= this.data.on_text %></label>
+            </div>
+        </div>
+    </div>
 </script>
