@@ -1,0 +1,25 @@
+{
+    "cli": true,
+    "adapterName": "hegovis",
+    "title": "hegoVis",
+    "description": "a collection of my favorites",
+    "contributors": [
+        "contributors will be named as soon as I know what I'm doing"
+    ],
+    "expert": "no",
+    "features": [
+        "vis"
+    ],
+    "type": "visualization-widgets",
+    "authorName": "HeikoCorpInc",
+    "authorGithub": "HeikoCorpInc",
+    "authorEmail": "heikocorpinc@gmx.de",
+    "gitRemoteProtocol": "HTTPS",
+    "gitCommit": "no",
+    "license": "MIT License",
+    "ci": [
+        0
+    ],
+    "dependabot": "no",
+    "creatorVersion": "1.28.0"
+}
