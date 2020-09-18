@@ -1,14 +1,14 @@
 /*
     ioBroker.vis hegovis Widget-Set
 
-    version: "0.0.1"
+    version: "0.0.2"
 
     Copyright 2020 HeikoCorpInc heikocorpinc@gmx.de
 */
 "use strict";
 
 // add translations for edit mode
-$.extend( true, systemDictionary, {
+$.extend(true, systemDictionary, {
         // Add your translations here, e.g.:
         // "size": {
         // 	"en": "Size",
