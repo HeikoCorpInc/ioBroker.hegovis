@@ -1,7 +1,7 @@
 /*
     ioBroker.vis hegovis Widget-Set
 
-    version: "0.0.2"
+    version: "0.0.3"
 
     Copyright 2020 HeikoCorpInc heikocorpinc@gmx.de
 */
